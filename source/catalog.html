@@ -10,8 +10,7 @@
     <h1 class="visually-hidden">Каталог Кэт энерджи</h1>
     <header class="main-header">
       <div class="main-header__wrapper">
-        <div class="main-header__logo-wrapper">
-          <a class="main-header__logo" href="#">
+          <a class="main-header__logo" href="index.html">
             <img class="main-header__logo-image" src="#" width="100" height="100" alt="Маскот">
             <img class="main-header__logo-image" src="#" width="100" height="100" alt="Кэт энерджи">
           </a>
@@ -34,7 +33,7 @@
         </nav>
       </div>
     </header>
-    <main class="main-catalog">
+    <main>
       <section class="main-catalog products">
         <h2 class="products__title">Каталог продукции</h2>
         <div class="products__wrapper">
@@ -59,7 +58,7 @@
                     <dd class="cart-discription__value">700 ₽</dd>
                   </div>
                 </dl>
-                <button class="cart__button button" type="button">Заказать</button>
+                <a class="cart__button button" href="#">">Заказать</a>
               </div>
             </li>
             <li class="products__item cart">
@@ -202,12 +201,9 @@
             </li>
             <li class="products__item cart cart--more">
               <div class="cart__wrapper">
-                <button class="cart__button button button--open" type="button">
-                  <span class="visually-hidden">Открыть больше товаров</span>
-                </button>
                 <h3 class="cart__title">Показать еще 100500 товаров</h3>
                 <p class="cart__text">На самом деле вкусов гораздо больше!</p>
-                <button class="cart__button button button--more" type="button">Показать все</button>
+                <a class="cart__button button button--more" href="">Показать все</a>
               </div>
             </li>
           </ul>
@@ -219,13 +215,13 @@
           <ul class="additional-products__list">
             <li class="additional-products__item">
               <h3 class="additional-products__title">Сахарозаменитель</h3>
-              <dl class="additional-products products-discription">
+              <div class="additional-products products-discription">
                 <div class="products-discription__wrapper">
-                  <dt class="products-discription__key">1 упаковка (100 г)</dt>
-                  <dd class="products-discription__value">200 ₽</dd>
+                  <div class="products-discription__key">1 упаковка (100 г)</div>
+                  <div class="products-discription__value">200 ₽</div>
                 </div>
-              </dl>
-              <button class="additional-products__button button" type="button">Заказать</button>
+              </div>
+              <a class="additional-products__button button" href="">Заказать</a>
             </li>
             <li class="additional-products__item">
               <h3 class="additional-products__title">Питьевая вода</h3>
@@ -274,7 +270,9 @@
           </form>
         </div>
       </section>
-      <section class="adress">
+    </main>
+    <footer class="footer">
+      <section class="footer adress">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="adress__wrapper">
           <address class="adress__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
@@ -286,10 +284,8 @@
           </button>
         </div>
       </section>
-    </main>
-    <footer class="footer">
       <div class="footer__wrapper">
-        <a class="footer__logo" href="#">
+        <a class="footer__logo" href="index.html">
           <img src="#" width="128" height="24" alt="Логотип Кэт энерджи">
         </a>
         <ul class="footer__list social">
