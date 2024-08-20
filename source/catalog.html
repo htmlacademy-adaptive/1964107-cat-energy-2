@@ -42,7 +42,11 @@
               <div class="cart__wrapper">
                 <a class="cart__link" href="#">
                   <h3 class="cart__title">Cat Energy PRO 500 г</h3>
-                  <img class="cart__img" src="#" width="100" height="100" alt="#">
+                  <picture>
+                    <source type="image\png" media="(min-width: 1140px)" srcset="images/pro500-chicken-catalog-desctop@1x.png 1x, images/pro500-chicken-catalog-desctop@2x.png 2x">
+                    <source type="image\png" media="(min-width: 768px)" srcset="images/pro500-chicken-catalog-tablet@1x.png 1x, images/pro500-chicken-catalog-tablet@2x.png 2x">
+                    <img class="cart__img" src="images/pro500-chicken-catalog-mobile@1x.png" srcset="images/pro500-chicken-catalog-mobile@2x.png 2x" width="140" height="107" alt="Банка корма с курицей 500 грамм">
+                  </picture>
                 </a>
                 <dl class="cart cart-discription">
                   <div class="cart-discription__wrapper">
@@ -58,7 +62,7 @@
                     <dd class="cart-discription__value">700 ₽</dd>
                   </div>
                 </dl>
-                <a class="cart__button button" href="#">">Заказать</a>
+                <a class="cart__button button" href="#">Заказать</a>
               </div>
             </li>
             <li class="products__item cart">
@@ -81,7 +85,7 @@
                     <dd class="cart-discription__value">1000 ₽</dd>
                   </div>
                 </dl>
-                <button class="cart__button button" type="button">Заказать</button>
+                <a class="cart__button button" href="#">Заказать</a>
               </div>
             </li>
             <li class="products__item cart">
@@ -104,7 +108,7 @@
                     <dd class="cart-discription__value">700 ₽</dd>
                   </div>
                 </dl>
-                <button class="cart__button button" type="button">Заказать</button>
+                <a class="cart__button button" href="#">Заказать</a>
               </div>
             </li>
             <li class="products__item cart">
@@ -127,7 +131,7 @@
                     <dd class="cart-discription__value">1000 ₽</dd>
                   </div>
                 </dl>
-                <button class="cart__button button" type="button">Заказать</button>
+                <a class="cart__button button" href="#">Заказать</a>
               </div>
             </li>
             <li class="products__item cart">
@@ -150,7 +154,7 @@
                     <dd class="cart-discription__value">400 ₽</dd>
                   </div>
                 </dl>
-                <button class="cart__button button" type="button">Заказать</button>
+                <a class="cart__button button" href="#">Заказать</a>
               </div>
             </li>
             <li class="products__item cart">
@@ -173,7 +177,7 @@
                     <dd class="cart-discription__value">700 ₽</dd>
                   </div>
                 </dl>
-                <button class="cart__button button" type="button">Заказать</button>
+                <a class="cart__button button" href="#">Заказать</a>
               </div>
             </li>
             <li class="products__item cart">
@@ -196,7 +200,7 @@
                     <dd class="cart-discription__value">500 ₽</dd>
                   </div>
                 </dl>
-                <button class="cart__button button" type="button">Заказать</button>
+                <a class="cart__button button" href="#">Заказать</a>
               </div>
             </li>
             <li class="products__item cart cart--more">
@@ -272,10 +276,10 @@
       </section>
     </main>
     <footer class="footer">
-      <section class=" address">
+      <section class="address">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="address__wrapper">
-          <address class="adress__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <address class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
         <div class="address__map">
           <img class="address__map-img" src="#" width="100" height="100" alt="#">
