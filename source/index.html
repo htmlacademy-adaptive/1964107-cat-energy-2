@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="htmlacademy/req-stylesheet-link">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <title>Кэт энерджи.</title>
+    <title>Кэт энерджи</title>
   </head>
   <body class="page__body">
     <h1 class="visually-hidden">Кэт энерджи</h1>
@@ -17,7 +18,7 @@
         <div class="main-header__logo-wrapper">
           <a class="main-header__logo" href="#">
             <picture>
-              <source type="image/svg+xml" media="(min-width: 1140px)" srcset="images/logo-pic-desktop.svg">
+              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-pic-desktop.svg">
               <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-pic-tablet.svg">
               <img class="main-header__logo-image" src="images/logo-pic-mobile.svg" width="33" height="38" alt="Маскот">
             </picture>
@@ -52,12 +53,12 @@
           <h2 class="promo__title">Функциональное питание для котов</h2>
           <p class="promo__text">Занялся собой? Займись котом!</p>
           <picture>
-            <source type="image/png" media="(min-width: 1140px)" srcset="images/cat-energy-desktop@1x.png 1x,images/cat-energy-desktop@2x.png 2x">
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/cat-energy-desktop@1x.png 1x,images/cat-energy-desktop@2x.png 2x">
             <source type="image/png" media="(min-width: 768px)" srcset="images/cat-energy-tablet@1x.png 1x,images/cat-energy-tablet@2x.png 2x">
             <img class="promo__img" src="images/cat-energy-mobile@1x.png" srcset="images/cat-energy-mobile@2x.png 2x" width="280" height="270" alt="Банка корма Кэт энерджи 500грамм">
           </picture>
           <div class="promo__button-wrapper">
-            <a class="promo__button-link" href="#">Подобрать программу</a>
+            <a class="promo__button-link button" href="#">Подобрать программу</a>
           </div>
         </div>
       </section>
@@ -100,11 +101,11 @@
           <h2 class="example__title">Живой пример</h2>
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <div class="example__list ">
-            <dl class="example__discription">
+            <dl class="example__description">
               <dt class="example__key">5 кг</dt>
               <dd class="example__value">Снижение веса</dd>
             </dl>
-            <dl class="example__discription">
+            <dl class="example__description">
               <dt class="example__key">60 дней</dt>
               <dd class="example__value">Затрачено времени</dd>
             </dl>
@@ -118,7 +119,7 @@
               </picture>
               <picture>
                 <source type="image/png" media="(min-width: 768px)" srcset="images/cat-after-slide-tablet@1x.png 1x,images/cat-after-slide-tablet@2x.png 2x">
-                <img class="slider__img-after" src="images/cat-after-slide-mobile@1x.png" srcset="images/cat-after-slide-tablet@2x.png 2x" width="280" height="256" alt="Худой кот после">
+                <img class="slider__img-after" src="images/cat-after-slide-mobile@1x.png" srcset="images/cat-after-slide-mobile@2x.png 2x" width="280" height="256" alt="Худой кот после">
               </picture>
             </div>
             <div class="slider__range-bar">
@@ -134,10 +135,15 @@
       <section class="address">
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="address__wrapper">
+          <p class="address__slogan">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <address class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
         <div class="address__map">
-          <img class="address__map-img" src="#" width="320" height="362" alt="Карта временная">
+          <picture>
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x,images/map-mobile@2x.png 2x">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x,images/map-tablet@2x.png 2x">
+            <img class="address__map-img" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Адрес магазина на крате">
+          </picture>
         </div>
       </section>
       <div class="footer__wrapper">
