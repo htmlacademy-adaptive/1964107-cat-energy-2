@@ -10,4 +10,16 @@
   color: #444444;
   line-height: 20px;
   font-style: normal;
+  width: 140px;
+}
+
+.address__wrapper {
+  background-color: #ffffff;
+  padding: 26px 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.address__slogan {
+  width: 140px;
 }

@@ -3,14 +3,66 @@
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   line-height: 20px;
+  flex-grow: 1;
+}
+
+.nav-menu__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  top: 65px;
+  left: 0;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.nav-menu--close {
+  display: none;
 }
 
 .nav-menu__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.nav-menu__item {
+  min-height: 65px;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 65px;
+}
+
+.nav-menu__item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #e6e6e6;
+  left: 0;
+  transform: translateY(-50%);
+  top: 0;
 }
 
 .nav-menu__link {
   text-decoration: none;
   color: inherit;
   text-transform: uppercase;
+  width: 100%;
+  min-height: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
 }
