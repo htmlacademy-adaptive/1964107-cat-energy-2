@@ -1,16 +1,61 @@
+.advantages {
+  margin-bottom: 49px;
+  padding: 0 20px;
+}
+
 .advantages__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .advantages__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .advantages__text {
   color: #444444;
+  display: block;
+  margin: 0;
+}
+
+.advantages__item {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.advantages__item::before {
+  content: "";
+  display: flex;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  background-color: #68b738;
+  background-image: url("../../icons/stack.svg#advantages-icon-list");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px 30px;
+}
+
+.advantages__item--colb::before {
+  background-image: url("../../icons/stack.svg#advantages-icon-colb");
+}
+
+.advantages__item--fork::before {
+  background-image: url("../../icons/stack.svg#advantages-icon-forc");
+}
+
+.advantages__item--clock::before {
+  background-image: url("../../icons/stack.svg#advantages-icon-clock");
 }

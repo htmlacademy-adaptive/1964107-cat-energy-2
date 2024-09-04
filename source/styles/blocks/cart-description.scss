@@ -2,4 +2,16 @@
   color: #444444;
   font-size: 12px;
   line-height: 16px;
+  margin: 0;
+  width: 140px;
+}
+
+.cart-description__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cart-description__value {
+  margin: 0;
 }

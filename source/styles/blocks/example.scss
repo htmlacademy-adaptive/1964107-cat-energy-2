@@ -1,5 +1,14 @@
 .example {
   background-color: #eaeaea;
+  margin: 0;
+  padding: 25px 20px 40px;
+}
+
+.example__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .example__title {
@@ -7,10 +16,16 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
+  width: 280px;
 }
 
 .example__text {
   color: #444444;
+  margin: 0;
+  margin-bottom: 20px;
+  width: 280px;
 }
 
 .example__key {
@@ -19,14 +34,40 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .example__value {
   color: #444444;
+  margin: 0;
+}
+
+.example__list {
+  margin: 0;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 32px;
+  width: 280px;
+}
+
+.example__description {
+  margin: 0;
+  min-width: 124px;
+  text-align: center;
 }
 
 .example__text-price {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 280px;
+}
+
+.example.slider {
+  width: 280px;
+  padding: 0;
 }
