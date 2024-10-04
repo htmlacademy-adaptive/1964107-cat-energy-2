@@ -4,11 +4,48 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000000;
+  color: #222222;
   margin: 0;
   margin-top: 3px;
   margin-bottom: 14px;
   width: 76px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    width: 135px;
+    margin: 0 auto 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+  }
+}
+
+.cart__link {
+  text-decoration: none;
+}
+
+.cart__wrapper {
+  width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    margin-top: -50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -55px;
+  }
 }
 
 .cart__text {
@@ -18,15 +55,13 @@
 }
 
 .cart__text-wrapper {
-  order: 1;
-}
+  @media (min-width: $tablet-width) {
+    width: 250px;
+  }
 
-.cart__link {
-  text-decoration: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 17px;
-  min-height: 107px;
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .cart__img-wrapper {
@@ -36,34 +71,80 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  order: -1;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 210px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    height: 200px;
+    margin-bottom: 12px;
+  }
 }
 
 .cart__img {
   width: 68px;
   height: 86px;
+
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    height: 172px;
+  }
 }
 
 .cart__img--big {
   width: 84px;
   height: 100px;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 206px;
+  }
 }
 
-.cart__button {
-  margin: 0 auto;
+.button.cart__button {
+  margin: 17px auto 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 169px;
+    margin: 0 auto;
+  }
 }
 
 .cart__wrapper--more {
   width: 219px;
   text-align: center;
   margin: 0 auto 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    margin-top: auto;
+  }
 }
 
 .cart__title--more {
   width: 100%;
   margin-bottom: 8px;
   color: #111111;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .cart__text--more {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
