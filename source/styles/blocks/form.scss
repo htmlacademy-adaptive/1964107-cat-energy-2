@@ -1,0 +1,36 @@
+.form__field {
+  width: 100%;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 13px;
+  border: 1px solid #cdcdcd;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 376px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 496px;
+  }
+}
+
+.form__field::placeholder {
+  font-family: "Oswald", sans-serif;
+  color: #444444;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.form__button.button {
+  width: 100%;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

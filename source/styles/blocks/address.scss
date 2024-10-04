@@ -1,3 +1,9 @@
+.address {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
 .address__slogan {
   margin: 0;
   font-family: "Oswald", sans-serif;
@@ -5,6 +11,23 @@
   line-height: 20px;
   text-transform: uppercase;
   width: 140px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 87px;
+  }
+}
+
+.address__slogan--catalog {
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    color: #111111;
+  }
 }
 
 .address__text {
@@ -12,6 +35,23 @@
   line-height: 20px;
   font-style: normal;
   width: 140px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+}
+
+.address__text--catalog {
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    margin-left: auto;
+    width: 157px;
+  }
 }
 
 .address__wrapper {
@@ -19,4 +59,39 @@
   padding: 26px 20px;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 565px;
+    min-height: 199px;
+    padding: 60px 80px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+  }
+}
+
+.address__wrapper--catalog {
+  background-color: #f2f2f2;
+}
+
+.address__wrapper--catalog {
+  @media (min-width: $tablet-width) {
+    background-color: #f2f2f2;
+  }
+}
+
+.address__map-img {
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 768px;
+    min-height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }

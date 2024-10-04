@@ -2,6 +2,17 @@
   background-color: #ffffff;
   margin-bottom: 20px;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    width: 768px;
+    margin: 0 auto 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 0 110px;
+  }
 }
 
 .programs__list {
@@ -9,9 +20,17 @@
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-flow: wrap column;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 80px;
+    flex-direction: row;
+  }
 }
 
 .programs__item {
@@ -20,6 +39,27 @@
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    min-height: 372px;
+    padding: 50px 30px;
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding: 77px 52px 30px;
+  }
+}
+
+.programs__item-wrapper {
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+  }
 }
 
 .programs__item::before {
@@ -31,6 +71,20 @@
   background-repeat: no-repeat;
   margin-bottom: 22px;
   margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 auto;
+    width: 200px;
+    height: 211px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+    margin: 0;
+    position: absolute;
+    top: 42px;
+  }
 }
 
 .programs__item--slim::before {
@@ -41,6 +95,18 @@
   background-image: url("../../icons/stack.svg#cat-pro");
   width: 67px;
   margin-right: 11px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 200px;
+    margin: 0 0 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 100px;
+    left: 31px;
+  }
 }
 
 .programs__title {
@@ -51,12 +117,37 @@
   text-transform: uppercase;
   display: block;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 206px;
+    font-size: 36px;
+    line-height: 36px;
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+    margin-left: 181px;
+  }
 }
 
 .programs__text {
   color: #444444;
   margin: 0;
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 48px;
+    color: #000000;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 457px;
+  }
 }
 
 .programs__button {
@@ -74,6 +165,13 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 165px;
+    min-height: 38px;
+  }
 }
 
 .programs__button::after {
