@@ -1,12 +1,15 @@
 .example {
   background-color: #eaeaea;
-  margin: 0;
+  margin: 0 auto;
   padding: 25px 20px 40px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
     background-color: #ffffff;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
   }
 }
 
@@ -47,7 +50,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 40px;
   width: 280px;
 
@@ -65,7 +68,7 @@
 
 .example__text {
   color: #444444;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 20px;
   width: 280px;
 
@@ -123,6 +126,9 @@
 }
 
 .example__list-wrapper {
+  min-width: 280px;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;

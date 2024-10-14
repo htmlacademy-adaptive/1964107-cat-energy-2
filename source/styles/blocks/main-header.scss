@@ -9,7 +9,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 55px 110px 0;
-    margin-bottom: 29px;
+    margin: 0 auto;
   }
 }
 
@@ -19,6 +19,15 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 704px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 .main-header__logo-wrapper {
@@ -32,12 +41,14 @@
   @media (min-width: $tablet-width) {
     width: 174px;
     height: 50px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 202px;
     height: 59px;
     padding: 0;
+    margin-bottom: 0;
   }
 }
 

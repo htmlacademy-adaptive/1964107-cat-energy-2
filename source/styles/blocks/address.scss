@@ -1,6 +1,7 @@
 .address {
   @media (min-width: $desktop-width) {
     position: relative;
+    width: 100%;
   }
 }
 
@@ -59,6 +60,8 @@
   padding: 26px 20px;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     padding: 60px 70px;
@@ -77,19 +80,16 @@
 .address__wrapper--catalog {
   background-color: #f2f2f2;
 
-  @media (min-width: $tablet-width) {
-    background-color: #f2f2f2;
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
   }
 }
 
 .address__map-img {
+  width: 100%;
+
   @media (min-width: $tablet-width) {
     display: block;
-    width: 768px;
     min-height: 400px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1440px;
   }
 }
