@@ -1,12 +1,70 @@
+.subscribe {
+  padding: 40px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 80px 68px;
+  }
+}
+
 .subscribe__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  margin: 0;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0 auto 66px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+    margin-left: 0;
+  }
 }
 
 .subscribe__text {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 24px;
+  text-align: center;
+  margin: 0 auto 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}
+
+.subscribe__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: center;
+  }
+}
+
+.subscribe__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    width: 632px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 752px;
+    margin: 0 auto;
+  }
 }

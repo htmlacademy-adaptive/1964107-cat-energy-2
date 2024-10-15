@@ -4,6 +4,20 @@
   margin: 0;
   margin-bottom: 20px;
   padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    background: #ffffff;
+    display: flex;
+    margin: 0 auto;
+    padding: 27px 30px 526px;
+    width: 768px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 23px 110px 0;
+  }
 }
 
 .promo__title {
@@ -14,6 +28,19 @@
   text-align: center;
   margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    width: 416px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: start;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 1;
+  }
 }
 
 .promo__text {
@@ -24,11 +51,97 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    text-align: start;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 21px;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .promo__wrapper {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-flow: wrap column;
   align-items: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    align-items: start;
+    padding-top: 36px;
+    padding-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    position: relative;
+    padding: 110px 0 184px 80px;
+    margin-left: 0;
+  }
+}
+
+.promo__img {
+  @media (min-width: $tablet-width) {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
+
+.promo__img-wrapper {
+  width: 280px;
+  height: 270px;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+    transform: none;
+    left: 0;
+    top: 74%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    margin: 0;
+    top: 0;
+    left: 50%;
+    transform: translateX(-33%);
+  }
+}
+
+.promo__button-link.button {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 26px;
+    min-height: 64px;
+    min-width: 242px;
+  }
+}
+
+.promo__button-wrapper {
+  width: 280px;
+  margin-top: 270px;
+
+  @media (min-width: $tablet-width) {
+    z-index: 1;
+    width: 244px;
+    margin-top: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }
