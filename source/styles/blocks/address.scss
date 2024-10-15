@@ -1,6 +1,8 @@
 .address {
   @media (min-width: $desktop-width) {
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1220px 1fr;
+    grid-template-rows: 95px max-content 106px;
     width: 100%;
   }
 }
@@ -20,7 +22,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 87px;
+    margin-right: 85px;
+    width: 163px;
   }
 }
 
@@ -44,6 +47,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
+    width: 157px;
   }
 }
 
@@ -68,12 +72,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 565px;
+    max-width: 565px;
     min-height: 199px;
     padding: 60px 80px;
-    position: absolute;
-    top: 95px;
-    left: 110px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    z-index: 1;
+    margin: 0;
   }
 }
 
@@ -85,11 +90,19 @@
   }
 }
 
+.address__map {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
 .address__map-img {
   width: 100%;
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+
+  @media (min-width: $desktop-width) {
     min-height: 400px;
   }
 }
