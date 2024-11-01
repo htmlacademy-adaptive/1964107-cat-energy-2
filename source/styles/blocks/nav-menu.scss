@@ -13,6 +13,7 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
+    background-color: transparent;
   }
 }
 
@@ -37,7 +38,13 @@
 
   @media (min-width: $desktop-width) {
     width: 476px;
+    background-color: transparent;
+    color: #ffffff;
   }
+}
+
+.nav-menu__wrapper--catalog {
+  color: #111111;
 }
 
 .nav-menu--close {
@@ -115,4 +122,26 @@
   @media (min-width: $tablet-width) {
     border-color: #68b738;
   }
+
+  @media (min-width: $desktop-width) {
+    border-color: #ffffff;
+  }
+}
+
+.nav-menu__link--current.nav-menu__link--catalog {
+  @media (min-width: $desktop-width) {
+    border-color: #68b738;
+  }
+}
+
+.nav-menu__link:hover {
+  opacity: 60%;
+}
+
+.nav-menu__link:focus {
+  opacity: 30%;
+}
+
+.nav-menu__link:active {
+  opacity: 100%;
 }

@@ -13,3 +13,9 @@
     margin: 0;
   }
 }
+
+.products-description__value {
+  @media (min-width: $desktop-width) {
+    min-width: 42px;
+  }
+}

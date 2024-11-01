@@ -13,7 +13,7 @@
   <body class="page__catalog">
     <h1 class="visually-hidden">Каталог Кэт энерджи</h1>
     <header class="main-header">
-      <div class="main-header__wrapper">
+      <div class="main-header__wrapper main-header__wrapper--catalog">
         <div class="main-header__logo-wrapper">
           <a class="main-header__logo" href="index.html">
             <picture>
@@ -28,16 +28,16 @@
           </button>
         </div>
         <nav class="nav-menu nav-menu--close">
-          <div class="nav-menu__wrapper">
+          <div class="nav-menu__wrapper nav-menu__wrapper--catalog">
             <ul class="nav-menu__list">
               <li class="nav-menu__item">
-                <a class="nav-menu__link" href="index.html">Главная</a>
+                <a class="nav-menu__link nav-menu__link--catalog" href="index.html">Главная</a>
               </li>
               <li class="nav-menu__item">
-                <a class="nav-menu__link nav-menu__link--current" href="#">Каталог продукции</a>
+                <a class="nav-menu__link nav-menu__link--catalog nav-menu__link--current" href="#">Каталог продукции</a>
               </li>
               <li class="nav-menu__item">
-                <a class="nav-menu__link" href="#">Подбор программы</a>
+                <a class="nav-menu__link nav-menu__link--catalog" href="#">Подбор программы</a>
               </li>
             </ul>
           </div>
@@ -168,7 +168,7 @@
             <li class="products__item cart">
                 <div class="cart__text-wrapper">
                   <a class="cart__link" href="#">
-                   <h3 class="cart__title">Cat Energy slim 500 г</h3>
+                    <h3 class="cart__title">Cat Energy slim 500 г</h3>
                   </a>
                   <dl class="cart cart-description">
                     <div class="cart-description__wrapper">
@@ -253,7 +253,7 @@
               <a class="cart__button button" href="#">Заказать</a>
             </li>
             <li class="products__item cart cart--more">
-              <a class="cart__link" href="#">
+              <a class="cart__link cart__link--more" href="#">
                 <div class="cart__wrapper cart__wrapper--more">
                   <h3 class="cart__title cart__title--more">Показать еще 100500 товаров</h3>
                   <p class="cart__text cart__text--more">На самом деле вкусов гораздо больше!</p>
@@ -266,7 +266,7 @@
       </section>
       <section class="main-catalog">
         <h2 class="main-catalog__title">Дополнительные товары</h2>
-        <div class="main-catalog-wrapper additional-products">
+        <div class="main-catalog__wrapper additional-products">
           <ul class="additional-products__list">
             <li class="additional-products__item">
               <h3 class="additional-products__title">Сахарозаменитель</h3>
@@ -280,32 +280,32 @@
             </li>
             <li class="additional-products__item">
               <h3 class="additional-products__title">Питьевая вода</h3>
-              <dl class="additional-products products-description">
+              <div class="additional-products products-description">
                 <div class="products-description__wrapper">
-                  <dt class="products-description__key">5 литров</dt>
-                  <dd class="products-description__value">50 ₽</dd>
+                  <div class="products-description__key">5 литров</div>
+                  <div class="products-description__value">50 ₽</div>
                 </div>
-              </dl>
+              </div>
               <a class="additional-products__button button" href="#">Заказать</a>
             </li>
             <li class="additional-products__item">
               <h3 class="additional-products__title">Молоко</h3>
-              <dl class="additional-products products-description">
+              <div class="additional-products products-description">
                 <div class="products-description__wrapper">
-                  <dt class="products-description__key">1 литр</dt>
-                  <dd class="products-description__value">100 ₽</dd>
+                  <div class="products-description__key">1 литр</div>
+                  <div class="products-description__value">100 ₽</div>
                 </div>
-              </dl>
+              </div>
               <a class="additional-products__button button" href="#">Заказать</a>
             </li>
             <li class="additional-products__item">
               <h3 class="additional-products__title">витамины</h3>
-              <dl class="additional-products products-description">
+              <div class="additional-products products-description">
                 <div class="products-description__wrapper">
-                  <dt class="products-description__key">1 упаковка (30 г)</dt>
-                  <dd class="products-description__value">300 ₽</dd>
+                  <div class="products-description__key">1 упаковка (30 г)</div>
+                  <div class="products-description__value">300 ₽</div>
                 </div>
-              </dl>
+              </div>
               <a class="additional-products__button button" href="#">Заказать</a>
             </li>
           </ul>
@@ -327,9 +327,9 @@
       </section>
     </main>
     <footer class="footer">
-      <section class="address">
+      <section class="address address--catalog">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="address__wrapper address__wrapper--catalog">
+        <div class="address__wrapper">
           <p class="address__slogan">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <address class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
@@ -339,6 +339,9 @@
             <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x,images/map-tablet@2x.png 2x">
             <img class="address__map-img" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Адрес магазина на крате">
           </picture>
+        </div>
+        <div class="address__map address__map--js">
+          <iframe class="address__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A49b3eb3b58900fabafbc48e9a1bea12f482aade528c9e886bc7f137ce272b7e2&amp;source=constructor" width="600" height="400"></iframe>
         </div>
       </section>
       <div class="footer__wrapper">

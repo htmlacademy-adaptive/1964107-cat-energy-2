@@ -1,12 +1,38 @@
+.promo__background {
+  width: 100%;
+  height: 302px;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 720px;
+    height: 694px;
+    z-index: -1;
+    right: 0;
+    top: -114px;
+  }
+}
+
+.promo__background-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .promo {
-  background: linear-gradient(180deg, rgb(104, 183, 56, 0.85) 62%, rgb(255, 255, 255) 7%);
   color: #ffffff;
   margin: 0;
   margin-bottom: 20px;
-  padding-top: 27px;
+  position: relative;
+  width: 100vw;
 
   @media (min-width: $tablet-width) {
-    background: #ffffff;
     display: flex;
     margin: 0 auto;
     padding: 27px 30px 526px;
@@ -17,6 +43,29 @@
   @media (min-width: $desktop-width) {
     width: 1440px;
     padding: 23px 110px 0;
+  }
+}
+
+.promo::before {
+  position: absolute;
+  content: "";
+  display: block;
+  min-width: 100vw;
+  min-height: 302px;
+  background-color: #68b738;
+  opacity: 85%;
+  top: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    min-width: 720px;
+    height: 694px;
+    right: 0;
+    top: -114px;
   }
 }
 
@@ -71,6 +120,7 @@
   flex-flow: wrap column;
   align-items: center;
   position: relative;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     align-items: start;
@@ -98,7 +148,7 @@
   width: 280px;
   height: 270px;
   position: absolute;
-  top: 60%;
+  top: 63%;
   transform: translateY(-50%);
 
   @media (min-width: $tablet-width) {

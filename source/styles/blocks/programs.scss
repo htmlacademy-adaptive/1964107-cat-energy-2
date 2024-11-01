@@ -42,23 +42,14 @@
 
   @media (min-width: $tablet-width) {
     min-height: 372px;
-    padding: 50px 30px;
+    padding: 77px 30px 53px;
     display: flex;
+    flex-flow: wrap column;
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    padding: 77px 52px 30px;
-  }
-}
-
-.programs__item-wrapper {
-  @media (min-width: $tablet-width) {
-    order: -1;
-  }
-
-  @media (min-width: $desktop-width) {
-    order: 0;
+    padding: 77px 52px 50px;
   }
 }
 
@@ -73,9 +64,13 @@
   margin-right: 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 0 auto;
+    margin: 0;
     width: 200px;
     height: 211px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 31px;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,12 +78,19 @@
     height: 106px;
     margin: 0;
     position: absolute;
-    top: 42px;
+    transform: none;
+    right: auto;
+    left: 52px;
+    top: 41px;
   }
 }
 
 .programs__item--slim::before {
   background-image: url("../../icons/stack.svg#cat-slim");
+
+  @media (min-width: $tablet-width) {
+    right: 63px;
+  }
 }
 
 .programs__item--pro::before {
@@ -106,6 +108,7 @@
     width: 134px;
     height: 100px;
     left: 31px;
+    top: 47px;
   }
 }
 
@@ -135,7 +138,8 @@
 .programs__text {
   color: #444444;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 38px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 340px;
@@ -147,6 +151,21 @@
 
   @media (min-width: $desktop-width) {
     width: 457px;
+    margin-bottom: 23px;
+  }
+}
+
+.programs__text::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #d9d9d9;
+  bottom: -23px;
+  right: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
