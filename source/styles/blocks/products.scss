@@ -45,7 +45,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 80px;
+    gap: 149px 80px;
   }
 }
 
@@ -75,7 +75,7 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    width: 324px;
+    width: 45%;
     min-height: 430px;
     margin: 0;
     padding: 0 37px 40px;
