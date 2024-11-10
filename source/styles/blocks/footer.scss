@@ -14,6 +14,10 @@
   gap: 24px;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .footer__wrapper {
@@ -23,23 +27,25 @@
 
   @media (min-width: $tablet-width) {
     flex-flow: wrap row;
-    padding: 50px 30px;
+    padding: 57px 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
     margin: 0 auto;
+    padding: 67px 108px;
   }
 }
 
 .footer__logo {
-  margin: 0 auto 20px;
+  margin: 0 auto 17px;
   display: block;
   position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
     margin: 0;
+    margin-right: auto;
     align-items: center;
   }
 }
@@ -67,8 +73,12 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 168px;
+    width: 163px;
     padding: 0;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 383px;
   }
 }

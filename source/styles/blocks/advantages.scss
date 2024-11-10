@@ -6,7 +6,7 @@
     padding: 0 30px 47px;
     width: 100%;
     max-width: 1280px;
-    margin: 0 auto 49px;
+    margin: 0 auto;
     display: flex;
     flex-flow: wrap column;
     justify-content: center;
@@ -143,5 +143,15 @@
   @media (min-width: $desktop-width) {
     width: 230px;
     margin-right: 94px;
+  }
+}
+
+.advantages__item--first::after {
+  @media (min-width: $tablet-width) {
+    right: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 4px;
   }
 }

@@ -6,10 +6,11 @@
   @media (min-width: $tablet-width) {
     padding: 40px 30px;
     max-width: 1160px;
+    margin-bottom: 34px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 45px 110px 71px;
+    padding: 70px 110px 71px;
     max-width: 1440px;
     margin: 0 auto;
   }
@@ -20,13 +21,13 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  margin: 0 auto 0 20px;
-  margin-bottom: 41px;
+  margin: 0 auto 41px 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 154px;
+    margin-bottom: 164px;
+    margin-left: 0;
   }
 }
 
@@ -41,11 +42,11 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    gap: 141px 60px;
+    gap: 141px 56px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 149px 80px;
+    gap: 144px 80px;
   }
 }
 
@@ -75,7 +76,7 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    width: 45%;
+    width: 46%;
     min-height: 430px;
     margin: 0;
     padding: 0 37px 40px;

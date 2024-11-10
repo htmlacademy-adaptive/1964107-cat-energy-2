@@ -6,6 +6,12 @@
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
     width: 132px;
+    padding: 0;
+    margin-right: 124px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
   }
 }
 

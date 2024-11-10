@@ -13,6 +13,10 @@
     flex-flow: column wrap;
     gap: 5px;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 10px;
+  }
 }
 
 .cart-description__wrapper {
@@ -37,6 +41,10 @@
     background-color: #cdcdcd;
     bottom: 0;
     right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: -5px;
   }
 }
 

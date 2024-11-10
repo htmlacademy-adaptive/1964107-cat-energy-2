@@ -23,7 +23,7 @@
   justify-content: center;
   position: absolute;
   z-index: 1;
-  top: 65px;
+  top: 53px;
   right: 0;
   background-color: #ffffff;
   width: 100%;
@@ -33,13 +33,14 @@
     width: 437px;
     position: static;
     flex-direction: row;
-    margin-left: auto;
+    margin-left: 94px;
   }
 
   @media (min-width: $desktop-width) {
     width: 476px;
     background-color: transparent;
     color: #ffffff;
+    margin-left: auto;
   }
 }
 
@@ -48,8 +49,6 @@
 }
 
 .nav-menu--close {
-  display: none;
-
   @media (min-width: $tablet-width) {
     display: flex;
   }
@@ -115,6 +114,7 @@
   @media (min-width: $tablet-width) {
     min-height: 100%;
     padding: 0;
+    align-items: flex-start;
   }
 }
 

@@ -34,7 +34,7 @@
 
   @media (min-width: $tablet-width) {
     border: 1px solid #cdcdcd;
-    margin-bottom: 70px;
+    margin-bottom: 73px;
     border-bottom: transparent;
     gap: 0;
     padding: 0;
@@ -60,7 +60,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 0;
+    padding: 16px 0;
     align-items: center;
   }
 }
@@ -94,6 +94,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    min-width: 244px;
     width: 244px;
     margin-left: 40px;
   }

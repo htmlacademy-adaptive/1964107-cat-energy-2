@@ -4,13 +4,13 @@
 
   @media (min-width: $tablet-width) {
     padding: 25px 30px 0;
-    margin: 0 auto 10px;
+    margin: 0 auto 14px;
     width: 100vw;
     max-width: 1160px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 55px 110px 0;
+    padding: 60px 110px 0;
     margin: 0 auto;
     max-width: 1440px;
   }
@@ -54,7 +54,7 @@
   flex-wrap: wrap;
   width: 100%;
   align-items: center;
-  margin-bottom: 14px;
+  margin-bottom: 11px;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -76,7 +76,6 @@
   border: none;
   width: 24px;
   height: 24px;
-  background-image: url("../../icons/stack.svg#open-menu-mobile");
   background-repeat: no-repeat;
   padding: 0;
   cursor: pointer;
@@ -87,11 +86,27 @@
   }
 }
 
+.main-header__nav-toggle--open {
+  background-image: url("../../icons/stack.svg#menu-open");
+  width: 18px;
+  height: 18px;
+}
+
+.main-header__nav-toggle--close {
+  background-image: url("../../icons/stack.svg#open-menu-mobile");
+}
+
 .main-header__logo {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   width: 190px;
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+    margin-top: -11px;
+  }
 }
 
 .main-header__logo:hover {
@@ -104,8 +119,18 @@
 
 .main-header__logo-image {
   margin-right: auto;
-  width: 60px;
-  height: 50px;
+  width: 33px;
+  height: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 59px;
+  }
 }
 
 .main-header__logo-text {
@@ -113,5 +138,10 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
   }
 }
