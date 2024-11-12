@@ -6,7 +6,7 @@
   text-transform: uppercase;
   color: #222222;
   margin: 0;
-  margin-top: 4px;
+  margin-top: 1px;
   margin-bottom: 15px;
   width: 76px;
 
@@ -36,11 +36,15 @@
     width: 135px;
     margin: 0 auto 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .cart__link--more {
   width: 219px;
-  padding-top: 54px;
+  padding-top: 56px;
   margin: 0 auto 21px;
   position: relative;
 
@@ -91,7 +95,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
 }
 

@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 7px;
+    gap: 0;
   }
 }
 
@@ -29,6 +29,10 @@
   @media (min-width: $tablet-width) {
     position: relative;
     min-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 9px;
   }
 }
 
