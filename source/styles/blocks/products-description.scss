@@ -23,8 +23,13 @@
 }
 
 .products-description__value {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     min-width: 42px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
   }
 }
 

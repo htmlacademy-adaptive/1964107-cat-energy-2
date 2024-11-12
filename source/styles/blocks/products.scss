@@ -6,11 +6,11 @@
   @media (min-width: $tablet-width) {
     padding: 40px 30px;
     max-width: 1160px;
-    margin-bottom: 34px;
+    margin-bottom: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 70px 110px 71px;
+    padding: 70px 110px 73px;
     max-width: 1440px;
     margin: 0 auto;
   }
@@ -26,8 +26,12 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 164px;
+    margin-bottom: 163px;
     margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 164px;
   }
 }
 

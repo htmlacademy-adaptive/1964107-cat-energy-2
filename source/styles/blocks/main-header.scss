@@ -71,12 +71,14 @@
   }
 }
 
+/*Показывает кнопку с открытым меню*/
 .main-header__nav-toggle {
   background-color: transparent;
   border: none;
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
   background-repeat: no-repeat;
+  background-image: url("../../icons/stack.svg#menu-open");
   padding: 0;
   cursor: pointer;
   margin-left: auto;
@@ -86,14 +88,16 @@
   }
 }
 
-.main-header__nav-toggle--open {
-  background-image: url("../../icons/stack.svg#menu-open");
-  width: 18px;
-  height: 18px;
+/*Показывает кнопку с закрытым меню*/
+.main-header__nav-toggle.main-header__nav-toggle--close-nojs {
+  background-image: url("../../icons/stack.svg#open-menu-mobile");
+  width: 24px;
+  height: 24px;
 }
 
+/*скрывает кнопку*/
 .main-header__nav-toggle--close {
-  background-image: url("../../icons/stack.svg#open-menu-mobile");
+  display: none;
 }
 
 .main-header__logo {
