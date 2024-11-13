@@ -7,9 +7,38 @@
   justify-content: space-between;
   margin-bottom: 15px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    justify-content: flex-end;
+    margin-top: 3px;
+    margin-bottom: 23px;
+  }
+
   @media (min-width: $desktop-width) {
-    justify-content: space-between;
     gap: 0;
     margin: 0;
+    justify-content: space-between;
+  }
+}
+
+.products-description__value {
+  @media (min-width: $tablet-width) {
+    min-width: 42px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
+.products-description__key {
+  @media (min-width: $tablet-width) {
+    min-width: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 14px;
   }
 }

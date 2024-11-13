@@ -1,23 +1,76 @@
 .promo-present {
-  background-color: rgb(104, 183, 56, 0.85);
   color: #ffffff;
   min-height: 290px;
-  padding: 58px 60px 43px;
+  margin: 0 auto;
+  padding: 55px 57px 43px;
   display: flex;
   text-align: center;
   align-items: end;
+  position: relative;
+  width: 280px;
+  background-image: url("/images/products-background-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @media (min-width: $tablet-width) {
     min-height: 200px;
     width: 707px;
-    margin: 0 auto 80px;
+    margin: 0 auto;
     padding: 40px;
+    background-image: url("/images/products-background-tablet@1x.png");
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
     margin: 0;
     padding: 56px 42px 43px;
+    min-height: 288px;
+    background-image: url("/images/products-background-desktop@1x.png");
+  }
+}
+
+.promo-present::before {
+  content: "";
+  position: absolute;
+  display: flex;
+  background-color: #68b738;
+  opacity: 85%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 290px;
+
+  @media (min-width: $tablet-width) {
+    width: 707px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 290px;
+  }
+}
+
+.promo-present::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  width: 78px;
+  height: 80px;
+  top: 57px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../../icons/stack.svg#icon-gift");
+
+  @media (min-width: $tablet-width) {
+    left: 78px;
+    transform: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 58px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -25,13 +78,17 @@
   margin: 0;
   font-size: 16px;
   line-height: 20px;
+  display: flex;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     width: 161px;
     margin: 30px 85px auto auto;
+    text-align: start;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    text-align: center;
   }
 }

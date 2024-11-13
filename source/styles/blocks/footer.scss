@@ -1,19 +1,23 @@
 .footer {
-  margin: 0 auto;
-  width: 100%;
   background-color: #f2f2f2;
+  width: 100%;
 }
 
 .footer__list {
   padding: 20px 0;
   margin: 0 auto;
   list-style: none;
-  width: 132px;
+  width: 100%;
   min-height: 22px;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
   align-items: center;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .footer__wrapper {
@@ -23,22 +27,25 @@
 
   @media (min-width: $tablet-width) {
     flex-flow: wrap row;
-    padding: 50px 30px;
+    padding: 57px 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
     margin: 0 auto;
+    padding: 67px 108px;
   }
 }
 
 .footer__logo {
-  margin: 0 auto 20px;
+  margin: 0 auto 17px;
   display: block;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
     margin: 0;
+    margin-right: auto;
     align-items: center;
   }
 }
@@ -57,13 +64,21 @@
 
 .footer__developer-wrapper {
   align-items: center;
-  padding-top: 20px;
-  min-width: 280px;
+  padding: 20px 0 0;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    min-width: 168px;
+    width: 163px;
     padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 383px;
   }
 }
