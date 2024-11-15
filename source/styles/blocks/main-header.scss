@@ -71,7 +71,6 @@
   }
 }
 
-/*Показывает кнопку с открытым меню*/
 .main-header__nav-toggle {
   background-color: transparent;
   border: none;
@@ -88,14 +87,12 @@
   }
 }
 
-/*Показывает кнопку с закрытым меню*/
 .main-header__nav-toggle.main-header__nav-toggle--close-nojs {
   background-image: url("../../icons/stack.svg#open-menu-mobile");
   width: 24px;
   height: 24px;
 }
 
-/*скрывает кнопку*/
 .main-header__nav-toggle--close {
   display: none;
 }
