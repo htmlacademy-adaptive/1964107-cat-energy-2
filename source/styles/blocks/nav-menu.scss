@@ -16,7 +16,7 @@
     flex-direction: row;
     margin-left: 94px;
     z-index: 2;
-    justify-content: flex-start;
+    justify-content: right;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,7 +26,6 @@
     width: 476px;
     margin-left: auto;
     color: #ffffff;
-    justify-content: right;
   }
 }
 
