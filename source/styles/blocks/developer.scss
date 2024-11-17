@@ -7,12 +7,12 @@
   background-color: #444444;
 }
 
-.developer__logo-text:hover {
+.developer__logo-text:hover + .developer__logo {
   background-color: #68b738;
 }
 
-.developer__logo-text:active {
-  background-color: #c9e1bb;
+.developer__logo-text:active + .developer__logo {
+  opacity: 30%;
 }
 
 .developer__logo {

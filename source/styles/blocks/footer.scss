@@ -71,6 +71,7 @@
   justify-content: space-between;
   max-width: 400px;
   margin: 0 auto;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 163px;
@@ -81,4 +82,13 @@
   @media (min-width: $desktop-width) {
     margin-left: 383px;
   }
+}
+
+.footer__developer-wrapper:hover .developer__logo {
+  background-color: #68b738;
+}
+
+.footer__developer-wrapper:active .developer__logo-text,
+.footer__developer-wrapper:active .developer__logo {
+  opacity: 30%;
 }
