@@ -24,6 +24,9 @@
 
 .promo__background-wrapper {
   height: 302px;
+  background-image: url("images/promo-background-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
 
   @media (min-width: $desktop-width) {
     width: 100%;
@@ -86,7 +89,7 @@
 }
 
 .promo__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -109,7 +112,7 @@
 }
 
 .promo__text {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   text-align: center;

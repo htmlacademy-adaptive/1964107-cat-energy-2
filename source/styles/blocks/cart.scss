@@ -1,5 +1,5 @@
 .cart__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -40,6 +40,14 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 25px;
   }
+}
+
+.cart__link:hover {
+  opacity: 80%;
+}
+
+.cart__link:active {
+  opacity: 60%;
 }
 
 .cart__link--more {
@@ -119,6 +127,14 @@
     width: 169px;
     margin-bottom: 10px;
   }
+}
+
+.cart__img-wrapper:hover {
+  opacity: 80%;
+}
+
+.cart__img-wrapper:active {
+  opacity: 60%;
 }
 
 .cart__img {
