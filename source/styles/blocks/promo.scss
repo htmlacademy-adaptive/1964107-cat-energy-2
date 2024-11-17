@@ -24,6 +24,9 @@
 
 .promo__background-wrapper {
   height: 302px;
+  background-image: url("images/promo-background-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
 
   @media (min-width: $desktop-width) {
     width: 100%;
